@@ -8,6 +8,10 @@ MODES = {
         "button_text": "Examine",
         "tooltip": "Run gnatprove to examine SPARK data and control flow"
     },
+    "prove_flow_report_all": {
+        "button_text": "Examine (report=all)",
+        "tooltip": "Run gnatprove to examine SPARK data and control flow and report all findings"
+    },
     "prove_report_all": {
         "button_text": "Prove (report=all)",
         "tooltip": "Run gnatprove to prove SPARK code and report all findings"

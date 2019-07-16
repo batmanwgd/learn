@@ -479,7 +479,7 @@ components, flow analysis knows that the entire object is initialized.
 However, record objects are still treated as single objects when analyzed
 as an input or output of a subprogram.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Show_Record_Flow_Analysis is
 
