@@ -572,7 +572,7 @@ expressions, it can't know that such a path is impossible.
 To avoid this problem, you should make the control flow explicit, as in
 this second version of ``Absolute_Value``:
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     procedure Absolute_Value
       (X :     Integer;
@@ -980,7 +980,7 @@ through ``A`` to increment every element by the value of ``Increment``,
 saturating at a specified threshold value. We specified a ``Global``
 contract for ``Incr_Until_Threshold``.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Show_Increments is
 
@@ -1105,7 +1105,7 @@ Next, we change the :ada:`Global` contract of ``Test_Index`` into a
 the set of global variables accessed can be deduced from the :ada:`Depends`
 contract.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Show_Biggest_Increasing_Sequence is
 

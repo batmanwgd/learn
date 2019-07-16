@@ -197,7 +197,7 @@ abstraction. For example, we must add a :ada:`Refined_State` aspect on our
 the entire hidden state of the package, which consists of both ``Content``
 and ``Top``.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Stack with
       Abstract_State => The_Stack
@@ -297,7 +297,7 @@ must be listed in ``P``'s state refinement.
 We see this in the example below, where the package ``Hidden_Nested``'s
 hidden state is part of ``P``'s hidden state.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package P with
        Abstract_State => State
@@ -365,7 +365,7 @@ refinement.
 
 Let's look at this example.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Stack with
       Abstract_State => The_Stack
@@ -694,7 +694,7 @@ be derived by GNATprove.
 
 For our ``Stack`` example, we could add an :ada:`Initializes` aspect.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Stack with
       Abstract_State => The_Stack,
@@ -736,7 +736,7 @@ arrow following that variable's name.
 
 Let's look at this example:
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Q is
        External_Variable : Integer := 2;
@@ -826,7 +826,7 @@ Let's add ``Part_Of`` to the state of hidden local package ``Ring_Buffer``,
 but this time we hide variable ``Capacity`` inside the private part of
 ``Ring_Buffer``.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Configuration is
 
@@ -923,7 +923,7 @@ Example #4
 
 Let's remove the abstract state on package ``Counting``.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Counting is
        procedure Reset_Black_Count;
@@ -964,7 +964,7 @@ Let's restore the abstract state to package ``Counting``, but this time
 provide a procedure ``Reset_All`` that calls the initialization procedures
 ``Reset_Black_Counter`` and ``Reset_Red_Counter``.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package Counting with
       Abstract_State => State
@@ -1277,7 +1277,7 @@ Example #10
 
 Let's remove the ``Initializes`` contract on package ``Data``.
 
-.. code:: ada prove_flow_button
+.. code:: ada prove_flow_report_all_button
 
     package External_Interface with
       Abstract_State => File_System,
